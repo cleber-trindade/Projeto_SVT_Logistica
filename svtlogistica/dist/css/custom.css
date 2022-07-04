@@ -1,0 +1,177 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: url(../assets/footer-bg.png) no-repeat center bottom;
+}
+
+#header {
+  width: 100%;
+  background-color: transparent;
+  transition: background ease-out 0.2s;
+}
+
+#header.active {
+  position: fixed;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  opacity: 0.9;
+}
+
+#header .navbar-collapse {
+  width: auto;
+  height: auto;
+}
+
+#header .nav-link {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 0;
+  padding-right: 0;
+  color: #000;
+  border-bottom: solid 4px transparent;
+}
+
+#header .nav-link:hover {
+  border-bottom: solid 4px var(--secondary);
+  color: var(--secondary);
+}
+
+#slider {
+  background-size: contain;
+}
+
+#slider h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#slider h2 {
+  font-size: 24px;
+}
+
+#slider h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#slider .grupo {
+  width: 250px;
+}
+
+#sobre {
+  padding-block: 100px;
+  background-color: lightskyblue;
+}
+
+#servicos a.destaque {
+  display: block;
+  background: var(--light);
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  color: #000;
+  text-decoration: none;
+  transition: all ease-out 0.2s;
+  background-color: gainsboro;
+}
+
+#servicos p {
+  color: black;
+  height: 220px;
+}
+
+#servicos a.destaque .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+#servicos a.destaque .img-container img {
+  max-height: 160px;
+}
+
+#contato {
+  padding: 120px;
+}
+
+#contato .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(225, 225, 225);
+  box-shadow: 1px 0px 5px 1px rgb(135, 135, 135);
+}
+
+#contato .email {
+  border-radius: 5px;
+  background-color: var(--secondary);
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 30px;
+}
+
+#contato .email img {
+  position: absolute;
+  left: 30px;
+  top: -30px;
+}
+
+#contato .email form {
+  width: 60%;
+  display: flex;
+}
+
+#contato .email .form-control,
+#contato .email .form-control::placeholder {
+  background: none;
+  color: rgb(255, 255, 255);
+}
+
+#contato ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contato ul li {
+  display: flex;
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+#contato ul li:first-child {
+  margin-left: 0;
+}
+
+#contato ul li a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: all ease-out 0.2s;
+}
+
+#contato ul li a:hover {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+#contato ul li img {
+  max-height: 40px;
+}
+
+.mapa {
+  margin-bottom: 50px;
+}
